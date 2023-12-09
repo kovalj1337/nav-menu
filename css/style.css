@@ -59,6 +59,7 @@ ul > li{
     color: #fd8612;
 }
 .sub-menu{
+    width: 211px;
     padding-top: 5px;
     position: absolute;
     display: none;
@@ -86,4 +87,14 @@ ul > li{
     height: 5px;
     width: 100%;
     background-color: transparent;
+}
+.right0{
+    right: 0px;
+}
+.sub-menu li a:hover{
+    background-color: #2a3644;
+}
+.sub-menu-radius ul > li:first-child{
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px ;
 }
