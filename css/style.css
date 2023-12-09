@@ -54,18 +54,36 @@ ul > li{
     color: #ffffff;
     font-weight: bold;
 }
+.food li a:hover{
+    background-color: #3f4852;
+    color: #fd8612;
+}
 .sub-menu{
+    padding-top: 5px;
     position: absolute;
     display: none;
     border-radius: 3px;
-    background-color: #d2d4d5;
+    z-index: 2;
 }
 .sub-menu li a{
-    display: inline-block;
+    background-color: #d2d4d5;
+    display: block;
     font-size: 15px;
     color: #2a3644;
     font-weight: bold;
 }
 .sub-menu li{
-    border-bottom: 1px solid #b9bdc1;
+    border: none;
+}
+.sub-menu li + li{
+    border-top: 1px solid #b9bdc1;
+}
+.sub-menu::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: transparent;
 }
