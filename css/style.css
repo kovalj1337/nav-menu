@@ -48,14 +48,18 @@ ul > li{
 .menu li:hover > .sub-menu{
     display: block;
 }
-.food li > a{
+.food li > a,
+.technology li > a,
+.vilage li > a{
     display: inline-block;
     padding: 18px 30px 16px;
     font-size: 16px;
     color: #ffffff;
     font-weight: bold;
 }
-.food li a:hover{
+.food li a:hover,
+.technology li a:hover,
+.vilage li a:hover{
     background-color: #3f4852;
     color: #fd8612;
 }
