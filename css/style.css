@@ -48,7 +48,7 @@ ul > li{
 .technology li + li{
     border-left: 1px solid #3f4852;
 }
-.technology{
+.display{
     display: table;
 }
 .menu li:hover > .sub-menu{
