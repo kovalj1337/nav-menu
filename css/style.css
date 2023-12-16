@@ -27,7 +27,6 @@ ul > li{
     padding: 0;
 }
 .display-flex{
-    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -41,13 +40,21 @@ ul > li{
     overflow: hidden;
     background-color: #2a3644;
 }
-.food > li {
+.food > li{
     border-left: 1px solid #3f4852;
     border-right: 1px solid #3f4852;
+}
+.vilage-border li + li,
+.technology li + li{
+    border-left: 1px solid #3f4852;
+}
+.technology{
+    display: table;
 }
 .menu li:hover > .sub-menu{
     display: block;
 }
+
 .food li > a,
 .technology li > a,
 .vilage li > a{
@@ -102,4 +109,7 @@ ul > li{
 .sub-menu-radius ul > li:first-child{
     border-top-right-radius: 3px;
     border-top-left-radius: 3px ;
+}
+.vilage{
+    
 }
