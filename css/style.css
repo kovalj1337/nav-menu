@@ -56,7 +56,7 @@ ul > li{
 }
 .food li > a,
 .technology li > a,
-.vilage li > a{
+.vilage-border li a{
     display: inline-block;
     padding: 18px 30px 16px;
     font-size: 16px;
@@ -66,12 +66,7 @@ ul > li{
 .technology li a{
     padding: 18px 43px 16px;  
 }
-.food li:hover a,
-.technology li a:hover,
-.vilage li a:hover{
-    background-color: #3f4852;
-    color: #fd8612;
-}
+
 .sub-menu{
     width: 211px;
     padding-top: 5px;
@@ -80,16 +75,19 @@ ul > li{
     border-radius: 3px;
     z-index: 2;
 }
-.sub-menu li a{
+.sub-menu li{
     background-color: #d2d4d5;
-    display: block;
-    font-size: 15px;
-    color: #2a3644;
-    font-weight: bold;
 }
-/* .sub-menu li{
-    border: none;
-} */
+.sub-menu li > a{
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    color: #2a3644;
+}
+.sub-menu-second{
+    color: #2a3644;
+    
+}
 .sub-menu li + li{
     border-top: 1px solid #b9bdc1;
 }
@@ -105,28 +103,65 @@ ul > li{
 .right0{
     right: 0px;
 }
-.sub-menu li a:hover{
+.sub-menu li:hover{
     background-color: #2a3644;
 }
+.sub-menu li:hover a{
+    color: #fd8612;
+}
+
 .sub-menu-radius ul > li:first-child{
     border-top-right-radius: 3px;
     border-top-left-radius: 3px ;
 }
-.vilage{
-    
-}
 
 .socialki{
     padding: 18px 30px 16px;
+    column-gap: 26px;
+    align-items: center;
 }
 
-.socialki li a{
+.socialki a{
     display: block;
-    padding: 0;
     background: url(../images/sprites.png) no-repeat;
+    transition: all 0.834s ease-out;
 }
 a.facebook{
     width: 9px;
     height: 18px;
-    background-position: -20px -2px;
+    background-position: -27px -2px;
+}
+a.twiter{
+    width: 16px;
+    height: 14px;
+    background-position: -38px -2px;
+}
+a.instagram{
+    width: 14px;
+    height: 16px;
+    background-position: -57px -3px;
+}
+a.facebook:hover{
+    background-position: -27px -22px;
+}
+a.twiter:hover{
+    background-position: -38px -25px;
+}
+a.instagram:hover{
+    background-position: -57px -24px;
+}
+.vilage-border > li:first-child{
+    padding-left: 40px;
+    position: relative;
+}
+.vilage-border > li:first-child::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("/images/sprites.png") no-repeat;
+    background-position: -9px -2px ;
 }
