@@ -54,7 +54,6 @@ ul > li{
 .menu li:hover > .sub-menu{
     display: block;
 }
-
 .food li > a,
 .technology li > a,
 .vilage li > a{
@@ -64,7 +63,10 @@ ul > li{
     color: #ffffff;
     font-weight: bold;
 }
-.food li a:hover,
+.technology li a{
+    padding: 18px 43px 16px;  
+}
+.food li:hover a,
 .technology li a:hover,
 .vilage li a:hover{
     background-color: #3f4852;
@@ -112,4 +114,19 @@ ul > li{
 }
 .vilage{
     
+}
+
+.socialki{
+    padding: 18px 30px 16px;
+}
+
+.socialki li a{
+    display: block;
+    padding: 0;
+    background: url(../images/sprites.png) no-repeat;
+}
+a.facebook{
+    width: 9px;
+    height: 18px;
+    background-position: -20px -2px;
 }
