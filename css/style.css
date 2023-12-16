@@ -165,3 +165,12 @@ a.instagram:hover{
     background: url("/images/sprites.png") no-repeat;
     background-position: -9px -2px ;
 }
+.vilage-border li:hover > .nashi-poslugi{
+    display: flex;
+    max-height: 250px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 421px;
+    width: 100%;
+    background-color: #2a3644;
+}
