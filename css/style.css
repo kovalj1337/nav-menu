@@ -44,8 +44,18 @@ ul > li{
     border-left: 1px solid #3f4852;
     border-right: 1px solid #3f4852;
 }
-.vilage-border li + li,
-.technology li + li{
+.food li:hover,
+.technology li:hover,
+.vilage-border li:hover{
+    background-color: #3f4852;
+}
+.food li:hover > a,
+.technology li:hover > a,
+.vilage-border li:hover > a{
+    color: #fd8612;
+}
+.vilage-border > li + li,
+.technology > li + li{
     border-left: 1px solid #3f4852;
 }
 .display{
@@ -103,6 +113,7 @@ ul > li{
 .right0{
     right: 0px;
 }
+
 .sub-menu li:hover{
     background-color: #2a3644;
 }
@@ -113,6 +124,10 @@ ul > li{
 .sub-menu-radius ul > li:first-child{
     border-top-right-radius: 3px;
     border-top-left-radius: 3px ;
+}
+.sub-menu-radius ul > li:last-child{
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px ;
 }
 
 .socialki{
@@ -165,6 +180,9 @@ a.instagram:hover{
     background: url("/images/sprites.png") no-repeat;
     background-position: -9px -2px ;
 }
+.nashi-poslugi{
+    background-color: #d2d4d5;
+}
 .vilage-border li:hover > .nashi-poslugi{
     display: flex;
     max-height: 250px;
@@ -172,7 +190,6 @@ a.instagram:hover{
     flex-wrap: wrap;
     max-width: 421px;
     width: 100%;
-    background-color: #2a3644;
 }
 .middle-titles{
     border: 1px #3f4852;
