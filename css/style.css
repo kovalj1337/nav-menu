@@ -166,16 +166,19 @@ a.instagram:hover{
     background-position: -57px -24px;
 }
 .vilage-border > li:first-child{
-    padding-left: 40px;
     position: relative;
 }
-.vilage-border > li:first-child::before{
+.vilage-border > li:first-child a{
+    padding-left: 59px;
+}
+.vilage-border li:first-child::before{
     content: "";
     position: absolute;
     display: block;
     width: 16px;
     height: 13px;
     top: 50%;
+    left: 31px;
     transform: translateY(-50%);
     background: url("/images/sprites.png") no-repeat;
     background-position: -9px -2px ;
