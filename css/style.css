@@ -85,6 +85,24 @@ ul > li{
     border-radius: 3px;
     z-index: 2;
 }
+.sub-menu-second{
+    padding-left: 5px;
+    left: 100%;
+    top: 53%;
+}
+.sub-menu-second::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -0;
+    height: 100%;
+    width: 5px;
+    background-color: red;
+}
+.sub-menu-third{
+    right:100%;
+    top: 77%;
+}
 .sub-menu li{
     background-color: #d2d4d5;
 }
@@ -117,7 +135,7 @@ ul > li{
 .sub-menu li:hover{
     background-color: #2a3644;
 }
-.sub-menu li:hover a{
+.sub-menu li:hover > a{
     color: #fd8612;
 }
 
@@ -171,7 +189,7 @@ a.instagram:hover{
 .vilage-border > li:first-child a{
     padding-left: 59px;
 }
-.vilage-border li:first-child > a::before{
+.vilage-border li:first-child > a.golovna::before{
     content: "";
     position: absolute;
     display: block;
@@ -185,12 +203,14 @@ a.instagram:hover{
 }
 .nashi-poslugi{
     background-color: #d2d4d5;
+    padding: 0;
 }
 .vilage-border li:hover > .nashi-poslugi{
     display: flex;
     max-height: 250px;
     flex-direction: column;
     flex-wrap: wrap;
+    top: calc(100% + 5px);
     max-width: 421px;
     width: 100%;
 }
