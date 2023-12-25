@@ -131,12 +131,23 @@ ul > li{
     height: 5px;
     width: 100%;
     background-color: transparent;
-    z-index: 4;
+}
+.nashi-poslugi li:first-child{
+    border-radius: 3px 0 0 0;
+}
+.nashi-poslugi li:nth-child(4){
+    border-radius: 0 0 0 3px;
+}
+.nashi-poslugi li:nth-child(5){
+    border-radius: 0 3px 0 0;
+}
+.nashi-poslugi li{
+    border-bottom: 1px solid #b9bdc1;
+    border-top: none;
 }
 .right0{
     right: 0px;
 }
-
 .sub-menu li:hover{
     background-color: #2a3644;
 }
@@ -207,7 +218,6 @@ a.instagram:hover{
     background-position: -9px -2px ;
 }
 .nashi-poslugi{
-    overflow: hidden;
     background-color: #d2d4d5;
     padding: 0;
 }
