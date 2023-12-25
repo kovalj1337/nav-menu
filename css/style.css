@@ -76,6 +76,9 @@ ul > li{
 .technology li a{
     padding: 18px 43px 16px;  
 }
+.technology li{
+    border-left: 1px solid #3f4852;
+}
 
 .sub-menu{
     width: 211px;
