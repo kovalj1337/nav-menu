@@ -47,6 +47,33 @@ thead tr:first-child > th:first-child{
 thead tr:last-child > th{
     border-top: 1px solid #3f4852;
 }
+td{
+    font-size: 16px;
+    color: #2a3644;
+}
+tbody td + td{
+    border-left: 1px solid #c0c1c2; 
+}
+tbody td{
+    border-top: 1px solid #c0c1c2;;  
+}
+tbody tr:nth-child(even){
+    background-color: #e8e8e8;
+}
+tbody tr:nth-child(odd){
+    background-color: #f2f2f2;
+}
+tbody td{
+    padding: 18px 21px 12px 23px;
+}
+tbody td:nth-child(3),
+tbody td:nth-child(4),
+tbody td:nth-child(5){
+    text-align: end;
+}
+tbody tr:hover{
+    background-color: #c0c1c2;
+}
 .wrapper{
     max-width: 960px;
     margin: 73px auto 97px;
@@ -275,4 +302,50 @@ a.instagram:hover{
     color: #ffffff;
     border-radius: 3px;
     background-color: #2a3644;
+}
+.bottom{
+    padding-top: 50px;
+}
+.table{
+    width: 100%;
+    display: table;
+}
+.title{
+    background-color: #2a3644;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.table > div{
+    display: table-row;
+}
+.table div > div{
+    display: table-cell;
+}
+.table > div + div:nth-child(odd){
+    background-color: #e8e8e8;
+}
+.table > div + div:nth-child(even){
+    background-color: #f2f2f2;
+}
+.table div{
+    padding: 17px 18px 17px 25px;
+}
+.table > div:first-child > div:nth-child(2){
+    min-width: 505px;
+    box-sizing: border-box;
+    text-align: start;
+    padding: 17px 70px 17px 25px;
+}
+.table div:not(:first-child) > div + div{
+    border-left: 1px solid #c0c1c2; 
+}
+.table div{
+    border-top: 1px solid #c0c1c2;;  
+}
+.title div + div{
+    border-left: 1px solid #3f4852; 
+}
+.table > div + div:hover{
+    background-color: #c0c1c2;
 }
