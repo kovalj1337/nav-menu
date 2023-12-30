@@ -126,13 +126,13 @@ tbody tr:hover{
 .technology li > a,
 .vilage-border li a{
     display: inline-block;
-    padding: 18px 30px 16px;
+    padding: 14px 30px 14px;
     font-size: 16px;
     color: #ffffff;
     font-weight: bold;
 }
 .technology li a{
-    padding: 18px 43px 16px;  
+    padding: 14px 43px 14px;  
 }
 .technology > ul > li{
     border-left: 1px solid #3f4852;
@@ -232,7 +232,7 @@ tbody tr:hover{
 }
 
 .socialki{
-    padding: 18px 30px 16px;
+    padding: 14px 30px 14px;
     column-gap: 26px;
     align-items: center;
 }
@@ -329,13 +329,13 @@ a.instagram:hover{
     background-color: #f2f2f2;
 }
 .table div{
-    padding: 17px 18px 17px 25px;
+    padding: 14px 18px 14px 25px;
 }
 .table > div:first-child > div:nth-child(2){
     min-width: 505px;
     box-sizing: border-box;
     text-align: start;
-    padding: 17px 70px 17px 25px;
+    padding: 14px 70px 14px 25px;
 }
 .table div:not(:first-child) > div + div{
     border-left: 1px solid #c0c1c2; 
@@ -348,4 +348,9 @@ a.instagram:hover{
 }
 .table > div + div:hover{
     background-color: #c0c1c2;
+}
+.table{
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px ;
+    overflow: hidden;
 }
