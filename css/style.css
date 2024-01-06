@@ -30,7 +30,7 @@ th{
  border-right: 1px solid #3f4852;   
 }
 thead th{
-    padding: 17px 47px;
+    padding: 13px 47px;
     font-size: 16px;
     color: #ffffff;
     font-weight: bold;
@@ -64,7 +64,7 @@ tbody tr:nth-child(odd){
     background-color: #f2f2f2;
 }
 tbody td{
-    padding: 18px 21px 12px 23px;
+    padding: 13px 21px 13px 23px;
 }
 tbody td:nth-child(3),
 tbody td:nth-child(4),
@@ -134,13 +134,15 @@ thead > tr:first-child > th:first-child{
     color: #ffffff;
     font-weight: bold;
 }
+.technology > ul > li:nth-child(4) > a{
+    padding: 14px 56px;
+}
 .technology li a{
-    padding: 14px 43px 14px;  
+    padding: 14px 40px 14px;  
 }
 .technology > ul > li{
     border-left: 1px solid #3f4852;
 }
-
 .sub-menu,
 .nashi-poslugi{
     cursor: pointer;
@@ -175,6 +177,7 @@ thead > tr:first-child > th:first-child{
 }
 .sub-menu li > a,
 .nashi-poslugi li > a{
+    padding: 14px 20px;
     font-size: 15px;
     font-weight: bold;
     display: block;
@@ -193,6 +196,15 @@ thead > tr:first-child > th:first-child{
     position: absolute;
     top: -5px;
     left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: transparent;
+}
+.sub-menu-third::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -5px;
     height: 5px;
     width: 100%;
     background-color: transparent;
@@ -336,7 +348,7 @@ a.instagram:hover{
     padding: 14px 18px 14px 25px;
 }
 .table > div:first-child > div:nth-child(2){
-    min-width: 505px;
+    width: 505px;
     box-sizing: border-box;
     text-align: start;
     padding: 14px 70px 14px 25px;
@@ -359,8 +371,14 @@ a.instagram:hover{
     border-bottom-left-radius: 3px ;
     overflow: hidden;
 }
-.table div > div:nth-child(3),
-.table div > div:nth-child(4),
-.table div > div:nth-child(5){
+.title div:nth-child(3),
+.title div:nth-child(4),
+.title div:nth-child(5){
+    text-align: center;
+    padding: 17px 47px;
+}
+.table div + div > div:nth-child(3),
+.table div + div > div:nth-child(4),
+.table div + div > div:nth-child(5){
     text-align: right;
 }
