@@ -156,11 +156,11 @@ thead > tr:first-child > th:first-child{
 .sub-menu-second{
     padding-left: 5px;
     left: 100%;
-    top: 53%;
+    top: 49%;
 }
 .sub-menu-third{
     right:100%;
-    top: 77%;
+    top: 75%;
 }
 .sub-menu li,
 .nashi-poslugi li{
@@ -191,14 +191,23 @@ thead > tr:first-child > th:first-child{
     width: 100%;
     background-color: transparent;
 }
-.sub-menu-third::before{
+ul.sub-menu-second::before{
     content: "";
     position: absolute;
     top: 0px;
     right: 0;
     height: 100%;
     width: 5px;
-    background-color: red;
+    background-color: transparent;
+}
+ul.sub-menu-third::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    height: 100%;
+    width: 5px;
+    background-color: transparent;
 }
 .nashi-poslugi li:first-child{
     border-radius: 3px 0 0 0;
@@ -297,7 +306,7 @@ a.instagram:hover{
 }
 .vilage-border li:hover > .nashi-poslugi{
     display: flex;
-    max-height: 250px;
+    max-height: 200px;
     flex-direction: column;
     flex-wrap: wrap;
     top: calc(100% + 5px);
