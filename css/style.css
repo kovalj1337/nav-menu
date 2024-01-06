@@ -158,15 +158,6 @@ thead > tr:first-child > th:first-child{
     left: 100%;
     top: 53%;
 }
-.sub-menu-second::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -0;
-    height: 100%;
-    width: 5px;
-    background-color: red;
-}
 .sub-menu-third{
     right:100%;
     top: 77%;
@@ -204,10 +195,10 @@ thead > tr:first-child > th:first-child{
     content: "";
     position: absolute;
     top: 0px;
-    left: -5px;
-    height: 5px;
-    width: 100%;
-    background-color: transparent;
+    right: 0;
+    height: 100%;
+    width: 5px;
+    background-color: red;
 }
 .nashi-poslugi li:first-child{
     border-radius: 3px 0 0 0;
